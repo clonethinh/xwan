@@ -1,0 +1,9 @@
+which curl >/dev/null 2>&1; if [ $? -eq 0 ]; then echo ''; echo "Đang tải về xWan..."
+	cd /tmp; curl -sLo luci-app-xwan.tar.gz https://raw.githubusercontent.com/clonethinh/xwan/main/luci-app-xwan.tar.gz; tar zxf luci-app-xwan.tar.gz; ./cai; rm -rf cai files root
+	echo ''; exit 1
+fi
+
+which wget >/dev/null 2>&1; if [ $? -eq 0 ]; then echo ''; echo "Đang tải về xWan..."
+cd /tmp; wget -O luci-app-xwan.tar.gz https://raw.githubusercontent.com/clonethinh/xwan/main/luci-app-xwan.tar.gz; tar zxf luci-app-xwan.tar.gz; ./cai; rm -rf cai files root
+	echo '';
+fi
