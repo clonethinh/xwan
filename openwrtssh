@@ -1,0 +1,2 @@
+opkg update; opkg install bash curl;
+curl -sL https://raw.githubusercontent.com/clonethinh/xwan/main/installxwan | bash
